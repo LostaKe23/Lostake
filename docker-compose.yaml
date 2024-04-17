@@ -6,7 +6,6 @@ services:
     container_name: hotel
     environment:
       POSTGRES_USER: lostake
-      POSTGRES_PASSWORD: secret
       POSTGRES_DB: first_db
     ports:
       - 6432:5432
