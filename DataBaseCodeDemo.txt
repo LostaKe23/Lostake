@@ -1,0 +1,31 @@
+create schema xgames;
+
+create table xgames.Games(
+game_id int primary key,
+title varchar(300),
+genre varchar(50),
+description_games varchar(1000),
+platform varchar(50),
+release_year date
+rating_games int,
+price decimal);
+create table xgames.Customer(
+customer_id int primary key,
+username varchar(100),
+email varchar(300),
+phone_number varchar(20),
+vk_id int,
+CREATE UNIQUE INDEX customer_unique_idx ON xgames.customer(email) WHERE deleted = false);
+create table xgames.Orders(
+order_id int primary key,
+customer_id int references xgames.customer(customer_id),
+game_id int references xgames.games(game_id),
+order_date date);
+create table xgames.Payments(
+payments_id int primary key,
+order_id int references xgames.orders(order_id),
+payment_method varchar(50),
+amount decimal,
+payment_date timestamp);
+
+
