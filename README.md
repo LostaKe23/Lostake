@@ -1,4 +1,4 @@
-<h1 align="center">Привет, меня зовут <a href="https://vk.com/lostake23" target="_blank">Yarik</a> и Oleg
+<h1 align="center">Привет, нас зовут <a href="https://vk.com/lostake23" target="_blank">Yarik</a> и Oleg
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">Мы являемся студентами по програмированию из России 🇷🇺</h3>
 <h3 align="center">Хотим показать вам наш проект по базам данных "XGames"</h3>
